@@ -1,0 +1,94 @@
+body.admin{ background:none; }
+#header_wp .adj_menu_3 {
+	/*padding: 18px 0px;*/
+    background-color: #3399FF;
+    height: 36px;
+    padding-top:5px;
+}
+#header_wp .bw_wp_logo { float: left; padding-left: 10px; padding-right: 10px;}
+#header_wp .adj_row { width: 98.5%;}
+#header_wp .adj_menu_3 ul {
+	margin:0px;
+	padding: 0px;
+}
+#header_wp .adj_menu_3 ul li {
+	margin-right: 5px;
+	display: block;
+}
+#header_wp .adj_menu_3 ul li:hover a.active {
+	font-weight: bold;
+}
+#header_wp .adj_menu_3 li a {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+    height: 26px;
+	text-decoration:none;
+	color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+	display: block;
+}
+#header_wp .adj_menu_3 li a.active, #header_wp .adj_menu_3 li a:hover {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:0px;
+	behavior: url('PIE.php');
+	color: #003366;
+	font-weight: bold;
+	height: 26px;
+	/*padding: 7px 12px;*/
+	position: relative;
+	/*bottom: 6px;*/
+	font-size: 11px;
+    padding-top: 10px;
+	outline: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	/*background: url('../images/test_menu_3_bg.png') repeat-x;*/
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+#header_wp .adj_menu_3 li a:hover{font-weight: normal}
+#header_wp .adj_menu_3 a:hover {
+	font-weight: normal;
+}
+#header_wp .adj_menu_4 ul li {
+	padding: 1px 10px 0px;
+	height: 38px;
+	background: url('../images/adj_menu_4_list_separator.png') no-repeat right 14px;
+}
+#header_wp .adj_menu_4 ul li:last-child {
+	background:none;
+}
+#header_wp .adj_menu_4  {
+    background: url('../images/wp_menu_low_bg.jpg') repeat-x left bottom;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    border-top:none;
+    height: 38px;
+    margin-top: 0;
+    padding-top: 0;
+}
+#header_wp .adj_menu_4 ul li a {
+	font-size: 12px;
+	color: #333;
+    line-height: 38px;
+	border-bottom: 1px solid #333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+#header_wp .adj_menu_4 ul li.active a {
+	font-weight: bold;
+	border-bottom: 0px;
+}
+#header_wp .adj_menu_4 ul li a:hover {
+	border-bottom: 0px;
+	color: #000;
+}

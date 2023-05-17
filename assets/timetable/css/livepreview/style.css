@@ -1,0 +1,435 @@
+/*
+Theme Name: LivePreview
+Theme URI: https://themeforest.net/user/QuanticaLabs/portfolio?ref=QuanticaLabs
+Description: LivePreview theme
+Author: QuanticaLabs
+Author URI: https://themeforest.net/user/QuanticaLabs?ref=QuanticaLabs
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Version: 1.0
+*/
+/* --- general --- */
+.clearfix:after
+{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+body
+{
+	background: #EEEEEE;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Arial';
+	font-size: 13px;
+	color: #666;
+}
+p
+{
+	padding: 1em 0;
+	color: #666;
+	line-height: 150%;
+}
+a 
+{
+    outline: none;
+    color: #1185D7;
+	font-size: 13px;
+}
+a:hover 
+{
+    color: #353C40;
+}
+.header_container
+{
+	background-color: #353C40;
+}
+.header,
+.theme_page,
+.footer,
+.footer_container .main
+{
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer_container
+{
+	background-color: #FFF;
+}
+.theme_page
+{
+	width: 930px;
+	background: #FFFFFF;
+    padding: 30px;
+	margin: 0 auto 30px;
+}
+.theme_page_header
+{
+	width: 930px;
+	background: #FFFFFF;
+	padding: 27px 30px 30px;
+	margin: 30px auto 1px;
+}
+.header_left
+{
+	float: left;
+	width: 270px;
+}
+.header_right
+{
+	float: right;
+}
+.mobile_menu
+{
+	display: none;
+	padding: 32px 0 34px;
+}
+.mobile_menu select
+{
+	border: 1px solid #DDDDDD;
+    color: #888888;
+    cursor: pointer;
+    padding: 7px;
+    width: 310px;
+}
+.footer
+{	
+	padding: 50px 0 0;
+}
+/* --- logo --- */
+.header_left a
+{
+	display: block;
+	margin-top: 8px;
+}
+/* --- menu --- */
+.menu-menu-1-container
+{
+	float: right;
+	position: relative;
+}
+.sf-menu
+{
+	margin: 0;
+	padding: 0;
+}
+.sf-menu li
+{
+	float: left;
+	list-style: none;
+}
+.sf-menu li a
+{
+	display: block;
+	border-top: 4px solid #353C40;
+	padding: 38px 18px 42px;
+	color: #ACB3B7;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+}
+.sf-menu li a:hover,
+.sf-menu .current_page_item a
+{
+	color: #FFF;
+}
+.menu-line
+{
+	position: absolute;
+	background-color: #00CAE9;
+}
+#menu-line-top
+{
+	height: 4px;
+	top: 0;
+}
+/* --- page --- */
+.theme_page_header h1
+{
+	display: inline-block;
+	margin: 0;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 34px;
+	color: #444;
+}
+.theme_page h2
+{
+	color: #444;
+	font-size: 24px;
+	font-family: 'Open Sans';
+	font-weight: normal;
+}
+.purchase_button
+{
+	float: right;
+	display: block;
+	width: 150px;
+	box-shadow: 0 4px 0 #6F9A37;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	line-height: 1.5;
+	background-color: #82B440;
+	color: #FFF;
+	padding: 5px 20px;
+	margin-top: 3px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.purchase_button:hover
+{
+	background-color: #7AA93C;
+	color: #FFF;
+}
+/* --- footer --- */
+div.footer div.widget 
+{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    vertical-align: top;
+    width: 225px;
+}
+div.footer div.widget:last-child
+{
+	margin-right: 0;
+}
+div.widget h4.widget-header 
+{
+	font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 30px;
+	color: #444;
+}
+div.widget h4.widget-header:after 
+{
+    background: #00CAE9;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 10px;
+    width: 50px;
+}
+div.footer div.widget p
+{
+	line-height: 22px;
+	padding: 15px 0;
+	font-size: 14px;
+	margin: 0;
+	color: #777;
+}
+div.footer div.widget p a
+{
+	color: #444;
+	text-decoration: none;
+	font-size: 14px;
+}
+div.footer div.widget p a:hover
+{
+	text-decoration: underline;
+}
+.top-0 
+{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+a.button.button-style-1 
+{
+    background-color: #FFF;
+    border: 2px solid #D7D7D7;
+    color: #777777;
+	font-size: 14px;
+    float: left;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease 0s;
+	line-height: 16px;
+}
+a.button.button-style-1:hover 
+{
+    border: 2px solid #00CAE9;
+    color: #777777;
+    text-decoration: none;
+}
+ul.list 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.list.list-bullet-bullet_1-png li > div 
+{
+    background-image: url("http://quanticalabs.com/home/wp-content/themes/lemon/media/image/public/list_icon/bullet_1.png");
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	padding-left: 20px;
+	line-height: 24px;
+	font-size: 14px;
+}
+ul.category-list, ul.category-list ul 
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+ul.category-list li a
+{
+	background-color: #F2F2F2;
+	color: #777777;
+	clear: both;
+    margin: 0 0 2px;
+	display: block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 7px;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+ul.category-list li a:hover
+{
+	text-decoration: underline;
+}
+.footer_container .footer-bottom
+{
+	border-top: 1px solid #EEE;
+	padding-top: 20px;
+	font-size: 14px;
+	line-height: 150%;
+	padding-bottom: 22px;
+	color: #777;
+}
+.layout-p-50x50 > .column-left, .layout-p-50x50 > .column-right 
+{
+    overflow: hidden;
+    width: 48.4848%;
+}
+.layout-p-50x50 > .column-left 
+{
+    clear: both;
+    float: left;
+}
+.layout-p-50x50 > .column-right 
+{
+	float: right;
+}
+.button-go-to-top
+{
+	background-image: url("http://quanticalabs.com/home/wp-content/themes/lemon/media/image/public/footer_top.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    height: 15px;
+    width: 15px;
+	margin-top: 6px;
+	outline: none;
+}
+.style_picker
+{
+	position: absolute;
+	display: block;
+	width: 230px;
+	padding: 10px;
+	border: 1px solid #EEEEEE;
+	top: 23px;
+	right: 0;
+}
+/*pricing tables preview*/
+.css3_table_container
+{
+	height: 670px;
+}
+.css3_table_container.pricing_cycle
+{
+	height: 750px;
+}
+.css3_table_container.auto
+{
+	height: auto;
+	padding-bottom: 50px;
+}
+.example_header_container
+{
+	position: relative;
+	border-bottom: 3px solid #EEE;
+	margin-bottom: 30px;
+}
+.example_header
+{
+	float: left;
+}
+.css3_table_container h2
+{
+	margin: 0;
+	text-align: left;
+}
+.css3_table_description
+{
+	margin: 0;
+	color: #777;
+	font-size: 16px;
+	padding: 10px 0 26px;
+	text-align: left;
+}
+/*css tooltips*/
+.css3_tooltips_preview_container a,
+.css3_tooltips_preview_container span.qlabs_tooltip_top
+{
+	border-bottom: 1px dotted #1185D7;
+	font-weight: bold;
+}
+.css3_tooltips_preview_container span.qlabs_tooltip_top
+{
+	color: #1185D7;
+}
+.css3_tooltips_preview_container a:hover,
+.css3_tooltips_preview_container span.qlabs_tooltip_top:hover
+{
+	border-bottom: 1px solid #353C40;
+}
+.css3_tooltips_preview_container .qlabs_tooltip_noborder,
+.css3_tooltips_preview_container .qlabs_tooltip_noborder:hover
+{
+	border: none;
+}
+.css3_tooltips_preview_container .qlabs_tooltip_notooltipborder > span a
+{
+	border: none;
+}
+.tooltip-preview-table td 
+{
+	padding: 6px 10px 6px 0;
+} 
+.tooltip-preview-img  img 
+{
+    width: 100%;
+    height: auto;
+}
+.tooltip-preview-img 
+{
+    border-spacing: 30px;
+}
+.tooltip-preview-table span 
+{
+    line-height: 150%;
+}
+.tooltip-preview-table 
+{
+    width: 100%;
+}

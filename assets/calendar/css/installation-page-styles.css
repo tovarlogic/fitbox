@@ -1,0 +1,107 @@
+/******************************************************************************
+#                         BookingWizz v5.5
+#******************************************************************************
+#      Author:     Convergine (http://www.convergine.com)
+#      Website:    http://www.convergine.com
+#      Support:    http://support.convergine.com
+#      Version:    5.5
+#
+#      Copyright:   (c) 2009 - 2014  Convergine.com
+#
+#******************************************************************************/
+
+body { margin:0 auto; font-family:Arial, Helvetica, sans-serif; color:#000; }
+
+#content_internal { margin-top:0; padding-top:0;width:850px; margin:0 auto;}
+	
+
+.topRow { background:#6FBD40; color:#FFFFFF;}
+
+.odd { background:#EFF3ED;}
+.even { background:#FFFFFF;}
+
+.paging a{ color:#528C2F;}
+.paging a:visited {color:#528C2F;}
+
+.client-add input[type=text] { width:220px;}
+
+.extensions_text { font-size:9px;}
+
+
+
+
+
+/**************** NEW DESIGN STYLES ****************************************************************/
+	/* GENERAL STYLES */
+	.left { float:left;}
+	.right { float:right;}
+	.clear { clear:both;}
+	
+	/* HEADER STYLES*/
+	#header { margin:0 auto; width:850px; border-bottom:1px #CCCCCC solid; }
+	#header .scriptname { font-size:28px; font-weight:bold; vertical-align:middle; height:70px; line-height:70px; width:775px;}
+	#header .version {height:70px; line-height:70px; background:url(../images/top_v.jpg) no-repeat 0 0; width:75px;}
+	.internal_header { width:850px; margin:0 auto;  border-bottom:1px #CCCCCC solid;   background:url(../images/new/login_bg.jpg) repeat-x top; height:100px;}
+	.expiring_number { position:relative; margin-top:-20px; color:#FFF; margin-bottom:0px;}
+	.expiring_number a, .expiring_number a:visited { color:#FFF;}
+	.menu { text-align:center;  }
+	.item { text-align:center; width:80px; margin:0 10px 0 10px;}
+	.item a { text-decoration:none; color:#333; font-size:13px; font-weight:bold;}
+	.icon { min-height:30px; display:block; position:relative; top:10px;}
+	
+	/* CONTENT */
+	#content { padding:15px 0 0 0; width:850px; margin:0 auto;  border-bottom:1px #CCCCCC solid; background:url(../images/new/login_bg.jpg) repeat-x bottom; min-height:288px;}
+	#content_internal { padding:15px 0 0 0; width:850px; margin:0 auto;}
+	.content_block h1 { font-size:24px;}
+	.content_block strong { font-size:18px;}
+	.content_block { font-size:13px;}
+	.content_block ul { margin-left:0px; padding-left:17px; line-height:160%;}
+	.content_block a {color:#528C2F;}
+	.content_block a:visited {color:#528C2F;}
+	.content_block a:hover { text-decoration:none;}
+	.content_block h2 { font-size:22px; color:#333; }
+	
+	/* TABS */
+	.tabbbed h2 { font-size:18px; color:#76AE03; border:1px solid #CCCCCC; padding:9px 30px 9px 30px; vertical-align:middle; margin-left:0px;margin-right:3px;   max-width:160px; text-align:center; position:relative; display:block; margin-bottom:-1px; background-color:#F6F6F6; float:left; }
+	.tabbbed h2.active { font-size:22px; color:#333; border:1px solid #CCCCCC; border-bottom:none; padding:8px 30px 3px 30px; margin-left:0px;margin-right:3px; max-width:160px; text-align:center; position:relative; display:block; margin-bottom:-1px; background-color:#FFF; float:left;}
+	.tabbbed h2.active a, .tabbbed h2.active a:visited, .tabbbed h2 a, .tabbbed h2 a:visited { text-decoration:none; color:#76AE03;}
+	.tabbbed .tab.active { display:block; max-width:828px; min-width:800px; border:1px solid #CCC; padding:30px 10px 30px 10px;} 
+	.tabbbed .tab { display:none; }
+	.tools-add { width:600px;}
+	.tools-add h2 { max-width:260px;}
+	.tools-add h2.active { max-width:260px;}
+
+		
+	/* TABLES */
+	.expiring_soon_table { background-color:#FFEEEE; border-left:8px solid #FFEEEE; border-right:8px solid #FFEEEE;}
+	.expiring_soon_table a,.expiring_soon_table a:visited { color:#000;}
+	.expiring_heading { font-size:20px; color:#990000;}
+	.dark_red { background-color:#FFDDDD;}
+	.light_red { background-color:#FFEEEE;}
+	.highlight30 { background-color:#FFE2DD; font-size:11px;}
+	.highlight60 { background-color:#FFC; font-size:11px;}
+	.highlight90 { background-color:#E6FDC6; font-size:11px;}
+	.topRow a {color:#FFFFFF; font-size:12px;}
+	.topRow a:visited {color:#FFFFFF; font-size:12px;}
+	
+	/* LOGIN PAGE */
+	.login_container {  width:342px; height:187px; margin:0 auto; margin-top:40px; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+	.login { padding:20px 20px 20px 30px;  line-height:300%; }
+	.login input[type=text] { border-top: 1px solid #ACACAC; border-left: 1px #E7E7E7 solid; border-right: 1px #E7E7E7 solid; border-bottom: 1px #E7E7E7 solid; height:21px;}
+	.login input[type=password] { border-top: 1px solid #ACACAC; border-left: 1px #E7E7E7 solid; border-right: 1px #E7E7E7 solid; border-bottom: 1px #E7E7E7 solid; height:21px;}
+	.login input[type=image] { padding-top:15px;}
+	.text_center { text-align:center; padding:20px 0 0 0;}
+	.msg { margin:0 auto; width:322px; padding:10px; font-size:12px;}
+	.error { border:1px solid #C30; background-color:#FFF2F0;padding:5px;margin-bottom: 5px}
+	.success { border:1px solid #090; background-color:#EBFED8;}
+	/* FOOTER */
+	.footer { font-size:11px; width:850px; margin:0 auto; text-align:right; padding-top:15px; color:#999;}
+	.footer a { color:#666;}
+	
+	/* INSTALL PAGE */
+	.install_container { width:500px;  margin:0 auto; margin-top:0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+	.install_container .login { line-height:130%; padding:0px 20px 20px 30px;  }
+	.install_container .login label { text-align:right; width:180px; display:block;  float:left; padding-right:8px; padding-top:2px;}
+	.install_container .login input[type=text], .install_container .login input[type=password] { width:150px; float:left; display:block;}
+/**************** NEW DESIGN STYLES ****************************************************************/
+	.whoisreply { width:100%; height:300px;}

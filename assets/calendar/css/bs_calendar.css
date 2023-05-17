@@ -1,0 +1,481 @@
+
+/***********************************************************************/
+/************************** CALENDAR STYLES ****************************/
+/***********************************************************************/
+html,body{
+    padding:0;
+    margin:0;
+    height:100%;
+    position:relative;
+}
+body { margin:0 auto; font-family: Arial, Helvetica, sans-serif; font-size:13px; color:#333; }
+
+#index {padding:10px 10px 10px 10px; width:100%; margin:0 auto;}
+#index h1 { font-family:'PT Sans', sans-serif; font-size:30px; color:#0099CC;}
+#index p { font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+p.copy { font-size:11px; font-family:Arial, Helvetica, sans-serif; width: 600px; margin: 0 auto; display: block;}
+
+.footer {padding:10px 10px 10px 10px; width:100%; margin:0 auto; text-align: right;}
+
+select{
+        background: #fff;
+    border: 1px solid #E5E5E5;
+    width: 215px;
+    height: 32px;
+    border-radius:5px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+.servicesListCont {
+    float: right;
+    width: 215px;
+}
+.calendar table {  font-family:'PT Sans', sans-serif; }
+.dash_border { width:100%; border-bottom:1px dotted #666; }
+
+
+.calendarTable th {
+    color: #666666;
+    font-size: 13px;
+    width: 100%;
+}
+
+.calendarTable tr td { width: 1%; height: 0px; }
+
+table tbody { color:#666666; font-size:14px; }
+table tbody .weekend { color:#990000; font-size:11px;} /* RED HIGHLIGHTING FOR SUNDAY AND SATURDAY */
+table tbody th { font-size:28px; font-weight:bold; color:#0099CC; text-transform:uppercase;} /* TITLE OF CURRENT MONTH*/
+
+.previous_month { color:#666666; font-size:18px; text-transform:uppercase; padding-left:20px; background:url(../images/arrow_left.jpg) no-repeat left top; text-decoration:none; line-height:26px; width:46px; display:block;}
+.previous_month:hover {  background:url(../images/arrow_left_on.jpg) no-repeat left top;}
+.next_month { color:#666666; font-size:18px; text-transform:uppercase; padding-right:20px; background:url(../images/arrow_right.jpg) no-repeat right top; text-decoration:none; line-height:26px; width:46px; display:block;}
+.next_month:hover { background:url(../images/arrow_right_on.jpg) no-repeat right top;}
+td.cursor{cursor: pointer}
+.cal_reg_on {vertical-align:top; background-color:#CCCCCC; width:76px; height:76px; color:#666666; font-size:22px;} /* REGULAR DAY WHICH FALLS UNDER 1 - 31 (dark grey area) */
+.cal_reg_on div.eventConteiner,.mainmenu5 div.eventConteiner,.cal_reg_on_today div.eventConteiner{
+    background-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px 3px 3px 3px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 2px 1px;
+    padding: 2px;
+    cursor:pointer;
+}
+.cal_reg_on div.eventConteiner:hover,.mainmenu5 div.eventConteiner:hover,.cal_reg_on_today div.eventConteiner:hover{
+	background-color: #fff;
+	border-color: #333333;
+}
+.cal_reg_on div.eventConteiner.disabled:hover,.mainmenu5 div.eventConteiner.disabled:hover,.cal_reg_on_today div.eventConteiner.disabled:hover{
+	background-color: #EEEEEE;
+	border-color: #EEEEEE;
+        cursor: default;
+}
+.cal_reg_on a { font-size:11px;} /* href style for NO-JS version*/
+.cal_reg_off {vertical-align:top; background-color:#E4E4E4; width:76px; height:76px;color:#666666; font-size:22px;} /* NOT AVAILABLE SQUARE OR TOTALLY BOOKED SQUARE */
+.cal_reg_off a { font-size:11px;} /* href style for NO-JS version*/
+.cal_reg_off noscript {font-size:11px;}
+.cal_reg_off span {font-size:11px; padding:0; margin:0;}
+.cal_reg_off span.rightAlign,.cal_reg_off_today span.rightAlign{text-align: right;display: block;padding-right: 10px}
+.checkoutSpan{display: block;padding: 5px 0 0 5px !important;background-color: #cccccc}
+.cal_reg_on_today {vertical-align:top; background-color:#B6DBED; width:76px; height:76px;color:#666666; font-size:22px; } /* TODAY SQUARE - SQUARE AVAILABLE FOR BOOKING */
+.cal_reg_on_today a { font-size:11px;} /* href style for NO-JS version*/
+.cal_reg_off_today {vertical-align:top; background-color:#B6DBED; width:76px; height:76px;color:#666666; font-size:22px; } /* TODAY SQUARE - NOT AVAILABLE FOR BOOKING  */
+.cal_reg_off_today noscript {font-size:11px;}
+.cal_reg_off_today span {font-size:11px; padding:0; margin:0;}
+.cal_reg_off_today a { font-size:11px;} /* href style for NO-JS version*/
+.mainmenu5 {vertical-align:top; background-color:#0099CC; width:76px; height:76px;color:#FFF; font-size:22px; font-weight:bold; cursor:pointer; } /* HOVER SQUARE */
+.mainmenu5 a { font-size:11px;} /* href style for NO-JS version*/
+.cal_reg_off.past{
+	color: #AAAAAA;
+}
+.error_msg {padding:15px; width:570px; margin:0 auto; font-size:14px;  text-align:center; border:1px solid #F30; background-color:#FEDEDE; margin-top:15px;}
+.hide-me-for-nojs{
+	font-size: 10px;
+}
+.cal_text {font-size:11px;cursor:pointer;}
+.cal_text a { color:#666;}
+.cal_text a:visited { color:#666;}
+noscript a { color:#666;}
+noscript a:visited { color:#666;}
+
+.ui-tabs-panel { padding: 0px !important; }
+
+.ui-tabs-hide {display: none;}
+
+.ui-tabs-panel {display: none;}
+
+.ajaxContainer { display: none; }
+
+@media only screen and (min-width:767px) 
+{ 
+    .cal_mobile { display: none; }
+ }
+
+@media only screen and (max-width : 767px) {
+
+    .ui-tabs-panel { padding: 0px !important; }
+
+    body{width: 100%}
+
+    .cal_screen { display: none; }
+
+    .desireTime{
+        line-height: 15px;
+    }
+    .languageContainer, .footer {
+        width: auto;
+
+    }
+
+    .servicesListCont {
+        width: 100%;
+        float: none;
+    }
+
+    #index h1 {
+        font-size: 20px;
+    }
+
+    #index {
+        width: auto;
+        padding: 0px 5px;
+    }
+
+    select {
+        width: 100%
+    }
+
+    table tbody th {
+        font-size: 18px;
+    }
+
+    table.dash_border {
+        width: 100%;
+    }
+
+    .calendarTable {
+        border-spacing: 2px;
+        width: 100%;
+    }
+
+    .calendarTable th {
+        color: #333333;
+        font-size: 12px;
+        text-align: center;
+    }
+
+/*    .calendarTable tr td {
+        width: 14%;
+        height: 50px;
+    }*/
+
+    .cal_reg_on, .cal_reg_off, .cal_reg_off_today {
+
+        font-size: 18px;
+
+    }
+
+    .mainmenu5 {
+        font-weight: normal;
+        font-size: 18px
+    }
+
+    .cal_text {
+        font-size: 10px;
+    }
+
+    .internal_booking_form, .desireTime, .timeEvCont {
+        width: auto;
+        padding: 0 5px;
+    }
+    .timeEvCont {
+        margin: 0 auto 10px;
+        padding: 7px 0;
+
+    }
+    .tab {
+        font-size: 15px;
+        height: 23px;
+        padding: 10px 0 0;
+        text-align: center;
+        width: 157px;
+    }
+    .qtyCont {
+        border-top: 1px solid #CCCCCC;
+        color: #666666;
+        font-size: 16px;
+        height: 28px;
+        margin: 8px auto 0;
+        padding: 5px 0 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .timeEvCont table, .timeEvCont table tbody, .timeEvCont table tr td, .timeEvCont table tr {
+        display: block;
+        width: auto;
+    }
+
+    .timeEvCont .timeItem {
+        width: auto;
+        text-align: center;
+    }
+
+    .tab {
+
+        margin-left: 5px
+    }
+
+    .book_form {
+        height: auto;
+        margin: 0;
+        width: auto;
+        padding-top: 13px;
+        background-position: top center;
+    }
+
+    .booking_form, .booking_form tbody, .booking_form tr, .booking_form td {
+        width: 100%;
+        display: block;
+        padding: 0 !important;
+    }
+
+    .booking_form input[type="text"], .booking_form textarea, .booking_form span {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+
+    }
+
+    .booking_form input[type="text"], .booking_form textarea {
+        padding: 0;
+        margin: 0 auto 10px;;
+    }
+
+    .booking_form input[type="text"] {
+        height: 28px;
+    }
+
+    .booking_form textarea {
+        height: 52px;
+    }
+
+    .book_form div {
+        margin: 9px 0 0 2%;
+        width: 110px;
+    }
+
+    .book_form div span {
+        display: inline-block;
+        float: left;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .book_form input[type="image"] {
+        float: right;
+        margin: 0 2% 0 0 !important;
+    }
+
+    .captchaCont {
+        float: left;
+        margin: 33px 89px 0pt 0pt;
+    }
+    #captcha {
+        float: right;
+        margin-top: 5px;
+        width: 50px;
+    }
+
+    .eventContainer {
+        width: 100%
+    }
+
+    table.evntCont tr td {
+        display: block;
+    }
+
+    table.evntCont tr td:first-child {
+        width: 100%
+    }
+
+    .eventCheckbox {
+        display: none
+    }
+
+    .eventTitle {
+
+        padding: 11px 0 0 10px;
+    }
+
+    .eventDescr {
+        border-bottom: 1px solid #CCCCCC;
+        color: #000000;
+        float: none;
+        margin: 0;
+        padding: 0 10px;
+        width: auto;
+    }
+
+    .eventImage {
+        display: block;
+        margin-top: 17px;
+
+    }
+
+    .internal_booking_form h2 {
+        font-size: 20px;
+
+    }
+
+    td.brd_l {
+        display: table-cell !important;
+        float: left;
+        height: 41px;
+        padding: 0 12px;
+        text-align: center;
+        vertical-align: middle;
+        width: auto;
+    }
+    td.brd_l.right{
+    float: right;
+    }
+
+    .fee {
+        font-size: 18px;
+        width: auto;
+        padding-top: 7px
+    }
+
+    .tickets {
+        color: #000000;
+        float: none;
+        width: auto;
+    }
+
+    .tickets select {
+
+        margin-top: 7px;
+    }
+
+    .days table.evntCont tr td:first-child {
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .days .eventDescr {
+        padding-bottom: 5px;
+    }
+
+    .days table.evntCont {
+        margin-top: 0px;
+    }
+
+    .days td.brd_l {
+        height: auto;
+        border: none;
+    }
+
+    .days td.brd_l.right {
+
+        float: right
+    }
+
+    .days table.evntCont tr td:last-child {
+        float: left;
+        text-align: center;
+        width: 92%;
+    }
+
+    .calCont input {
+        width: 95px !important;
+    }
+
+    .days .fee {
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .orderSummery {
+        max-width: 320px;
+       margin-right: 10px;
+        width: auto;
+    }
+    ul.summery {
+        float: none;
+        min-width: 300px;
+        padding: 17px 6px 10px;
+        width: auto;
+        max-width: 480px;
+    }
+    ul.summery li{
+    width: auto;
+    float: none;
+    clear: both;
+
+    }
+    ul.summery li label {
+            float: left;
+        width: 120px;
+    }
+    ul.summery li span {
+        float: left;
+        /*margin-left: 5px;*/
+        width: 156px;
+    }
+    .eventConteiner table,.eventConteiner table tbody,.eventConteiner table tr{
+    display: block;width: 100%;
+    }
+    .eventConteiner table td{
+    display: block;
+    }
+    #eventListConteiner .eventDescription {
+        color: #000000;
+        padding: 10px 5px 10px 25px;
+        width: auto;
+    }
+    .eventConteiner table td:first-child {
+    display: block;width: 100%;
+    }
+
+
+    #eventListConteiner .tableR,#eventListConteiner .tableR tbody{display: table}
+    #eventListConteiner .tableR tr{display: table-row}
+    #eventListConteiner .tableR td{display: table-cell;text-align: center}
+
+    #eventListConteiner .eventFee {
+        color: #000000;
+        font-size: 26px;
+        height: 46px;
+        margin: 2px 18px;
+        padding-top: 5px;
+        width: auto;
+    }
+    #eventListConteiner .tableR {border-top: 1px solid #eee}
+    #eventListConteiner .eventFee {
+        border-left: none;
+    }
+    p.copy{
+
+    width: auto}
+    #eventListConteiner .tableR input{margin: 0 auto}
+    #eventListConteiner .eventSpots {
+        max-width: 120px;
+    }
+    span.spot1 {
+
+        float: left;
+    }
+    .evntCont .fee {
+        font-size: 22px;
+        text-align: right;
+        width: 100%;
+    }
+    .error_msg {
+
+        width: auto;
+    }
+
+    
+}

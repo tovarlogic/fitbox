@@ -1,0 +1,156 @@
+@media screen and (max-width:1009px)
+{
+	.mobile_menu
+	{
+		display: block;
+		float: right;
+	}
+	.menu-menu-1-container
+	{
+		display: none;
+	}
+	.header,
+	.footer,
+	.footer_container .main
+	{
+		width: 750px;
+	}
+	.theme_page_header
+	{
+		width: 690px;
+	}
+	.theme_page
+	{
+		padding: 20px;
+		width: 710px;
+	}
+	.page_margin_top
+	{
+		margin-top: 23px;
+	}
+	div.footer div.widget
+	{
+		width: 345px;
+	}
+	.css3_table_container
+	{
+		height: 740px;
+	}
+	.css3_table_container.pricing_cycle
+	{
+		height: 840px;
+	}
+	.purchase_button
+	{	
+		float: none;
+		clear: both;
+		margin: 20px auto 0;
+	}
+	.theme_page_header h1
+	{
+		display: block;
+		text-align: center;
+	}
+	.style_picker
+	{
+		top: 0;
+	}
+}
+@media screen and (max-width:767px)
+{
+	.header,
+	.footer,
+	.footer_container .main
+	{
+		width: 462px;
+	}
+	.theme_page_header
+	{
+		width: 402px;
+	}
+	.theme_page
+	{
+		width: 422px;
+	}
+	.header_left, .mobile_menu 
+	{
+		width: 100%;
+		text-align: center;
+	}
+	.mobile_menu  select
+	{
+		width: 462px;
+	}
+	div.footer div.widget
+	{
+		width: 462px;
+		margin-right: 0;
+	}
+	.css3_table_container
+	{
+		height: 840px;
+	}
+	.css3_table_container.pricing_cycle
+	{
+		height: 920px;
+	}
+	.tooltip-preview-img 
+	{
+        border-spacing: 15px;
+    }
+}
+@media screen and (max-width:479px)
+{
+	.header,
+	.footer,
+	.mobile_menu  select,
+	.footer_container .main
+	{
+		width: 300px;
+	}
+	.theme_page_header
+	{
+		width: 260px;
+		padding: 27px 20px 20px;
+	}
+	.theme_page
+	{
+		width: 260px;
+	}
+	div.footer div.widget
+	{
+		width: 300px;
+	}
+	.purchase_button
+	{	
+		margin: 10px auto 0;
+	}
+	.tooltip-preview-table td 
+	{
+		display: block;
+	}
+	.tooltip-preview-img 
+	{
+        border-spacing: 5px;
+    }
+	.style_picker
+	{
+		position: static;
+		margin-bottom: 30px;
+	}
+	.css3_table_container
+	{
+		height: 880px;
+	}
+	.css3_table_container.pricing_cycle
+	{
+		height: 1000px;
+	}
+}
+@media screen and (max-device-width: 480px)
+{
+	body
+	{
+		-webkit-text-size-adjust: none;
+	}
+}

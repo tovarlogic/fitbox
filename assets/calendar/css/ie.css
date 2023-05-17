@@ -1,0 +1,13 @@
+.adj2_btn_long_orange span {
+	font-size: 12px;
+	
+}
+input[type="text"] {
+	line-height: 30px;
+}
+.servicesList button[type="submit"] span {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 );
+}
+a, img, {
+	border: 0;outline: 0;
+}

@@ -1,0 +1,46 @@
+.spin{border:1px solid #ddd;}
+.spin .divider{display:none}
+.spin .arrow{display: none}
+.spin .ddTitle{color:#999;background:transparent url(../images/spin.png) no-repeat right top;}
+.spin .ddTitle .ddTitleText{padding:8px 20px 8px 5px;; font-weight:normal; font-size:13px;line-height: 16px;}
+.spin .ddTitle .ddTitleText .ddTitleText{padding:0;}
+.spin .ddTitle .description{font-size:12px; color:#666}
+.spin .ddTitle .ddTitleText img{padding-right:5px;}
+.spin .ddChild{border:1px solid #c3c3c3; background-color:#fff; left:-1px;}
+.spin .ddChild li{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #C3C3C3;
+    line-height: 150%;
+    padding: 0 5px;
+}
+.spin .ddChild li .description{color:#666;}
+.spin .ddChild li .ddlabel{color:#333;}
+.spin .ddChild li.hover{background-color:#66CCFF;}
+.spin .ddChild li img{padding:0 6px 0 0;}
+.spin .ddChild li.optgroup{padding:0;}
+.spin .ddChild li.optgroup .optgroupTitle{padding:0 5px; font-weight:bold; font-style:italic}
+.spin .ddChild li.optgroup ul li{padding:5px 5px 5px 15px}
+.spin .ddChild li.selected{background-color:#0d97ba;}
+.spin .ddChild li.selected .ddlabel{color:#fff;}
+
+
+
+.rows{border:1px solid #ddd;}
+.rows .divider{display:none}
+.rows .arrow{display: none}
+.rows .ddTitle{color:#999;background:transparent url(../images/drop_down4.png) no-repeat right top;}
+.rows .ddTitle .ddTitleText{padding:5px 20px 6px 10px; font-weight:normal; font-size:13px;line-height: 16px;}
+.rows .ddTitle .ddTitleText .ddTitleText{padding:0;}
+.rows .ddTitle .description{font-size:12px; color:#666}
+.rows .ddTitle .ddTitleText img{padding-right:5px;}
+.rows .ddChild{border:1px solid #c3c3c3; background-color:#fff; left:-1px;}
+.rows .ddChild li{padding:5px; background-color:#fff; border-bottom:1px solid #c3c3c3;}
+.rows .ddChild li .description{color:#666;}
+.rows .ddChild li .ddlabel{color:#333;}
+.rows .ddChild li.hover{background-color:#66CCFF;}
+.rows .ddChild li img{padding:0 6px 0 0;}
+.rows .ddChild li.optgroup{padding:0;}
+.rows .ddChild li.optgroup .optgroupTitle{padding:0 5px; font-weight:bold; font-style:italic}
+.rows .ddChild li.optgroup ul li{padding:5px 5px 5px 15px}
+.rows .ddChild li.selected{background-color:#0d97ba;}
+.rows .ddChild li.selected .ddlabel{color:#fff;}
